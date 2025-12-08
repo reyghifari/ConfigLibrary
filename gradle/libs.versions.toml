@@ -1,0 +1,53 @@
+[versions]
+agp = "8.12.3"
+kotlin = "2.0.21"
+coreKtx = "1.17.0"
+lifecycleRuntimeKtx = "2.9.4"
+activityCompose = "1.11.0"
+composeBom = "2024.09.00"
+appcompat = "1.7.1"
+material = "1.13.0"
+editorkit = "2.9.0"
+language-json = "2.9.0"
+language-kotlin = "2.9.0"
+sqlcipher = "4.6.1"
+gson = "2.13.1"
+lottie-compose = "6.6.9"
+constraintlayout-compose = "1.0.1"
+androidx-navigation = "2.9.3"
+room = "2.6.1"  # ← ADD THIS
+
+
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+editorkit = { module = "com.blacksquircle.ui:editorkit", version.ref = "editorkit" }
+language-json = { module = "com.blacksquircle.ui:language-json", version.ref = "language-json" }
+language-kotlin = { module = "com.blacksquircle.ui:language-kotlin", version.ref = "language-kotlin" }
+sqlcipher = { module = "net.zetetic:sqlcipher-android", version.ref = "sqlcipher" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie-compose" }
+androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintlayout-compose" }  # ← ADD THIS
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }  # ← ADD THIS
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }  # ← ADD THIS
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }  # ← ADD THIS
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version = "2.0.21-1.0.28" }  # ← ADD THIS (for Room annotation processing)
