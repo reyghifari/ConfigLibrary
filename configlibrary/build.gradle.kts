@@ -72,7 +72,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
 
-                groupId = "com.github.reyghifari"  // ← GANTI dengan username GitHub Anda
+                groupId = "com.github.reyghifari"
                 artifactId = "configlibrary"
                 version = "1.0.0"
             }
