@@ -61,8 +61,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout.compose)
     implementation(libs.androidx.navigation.compose)
     // Room dependencies
-    implementation(libs.androidx.room.runtime)  // ← ADD THIS
-    implementation(libs.androidx.room.ktx)  // ← ADD THIS
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
 }
 
