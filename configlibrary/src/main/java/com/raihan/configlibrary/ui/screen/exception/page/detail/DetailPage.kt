@@ -13,8 +13,6 @@ import com.raihan.configlibrary.ui.component.AppBar
 import com.raihan.configlibrary.ui.component.codeeditor.KotlinEditor
 import com.raihan.configlibrary.ui.screen.exception.ExceptionProvider
 import com.raihan.configlibrary.ui.theme.ISTAppTheme
-import co.id.pegadaian.tring.core.theme.TringColor
-import co.id.pegadaian.tring.core.theme.TringDp
 import com.raihan.configlibrary.ui.theme.Dimens
 import com.raihan.configlibrary.ui.theme.White
 
