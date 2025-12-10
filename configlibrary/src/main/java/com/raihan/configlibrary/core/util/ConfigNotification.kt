@@ -34,6 +34,7 @@ class ConfigNotification {
             .setAutoCancel(true)
             .setStyle(NotificationCompat.BigTextStyle().bigText(desc))
             .setContentTitle(title)
+            .setSmallIcon(R.drawable.img_config)
             .setContentText(desc)
             .setContentIntent(notifPendingIntent(context))
             .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
