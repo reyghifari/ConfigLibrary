@@ -33,7 +33,6 @@ class ConfigNotification {
             .Builder(context, chanelID)
             .setAutoCancel(true)
             .setStyle(NotificationCompat.BigTextStyle().bigText(desc))
-            .setSmallIcon(R.mipmap.ic_launcherconfig)
             .setContentTitle(title)
             .setContentText(desc)
             .setContentIntent(notifPendingIntent(context))
