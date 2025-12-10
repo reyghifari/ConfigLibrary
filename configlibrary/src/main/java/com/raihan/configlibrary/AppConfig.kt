@@ -11,11 +11,10 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 object AppConfig {
-    fun init(context: Context, destinationPackage: String, exceptionPackage : String, providerPackage : String, listUrl: List<String>) {
+
+    fun init(context: Context, destinationPackage: String, listUrl: List<String>) {
         SetupPref(context).set {
             preferencesName = "app_pref"
-            packageException = exceptionPackage
-            packageProvider = providerPackage
             resetFinishDestination = destinationPackage
             baseUrlEnvironment = listUrl.mapIndexed { index, url ->
                 ModelDropdown(

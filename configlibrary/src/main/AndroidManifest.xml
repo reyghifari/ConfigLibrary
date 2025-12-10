@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application>
+        <receiver android:name=".core.util.exception.ExceptionReceiver" />
+        <activity
+            android:name=".ui.screen.home.HomeActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.raihan.configlibrary.task" />
+        <activity
+            android:name=".ui.screen.receiver.OctetStreamReceiverActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.raihan.configlibrary.task">
 
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/octet-stream" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.screen.baseurl.BaseURLActivity" />
+        <activity android:name=".ui.screen.exception.ExceptionActivity" />
+    </application>
 </manifest>
